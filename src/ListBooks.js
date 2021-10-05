@@ -1,9 +1,8 @@
 import React from 'react'
-import Book from "./Book"
+import Book from './Book'
 
-export default class Mybooks extends React.Component {
-
-
+export default class ListBooks extends React.Component {
+  
     constructor(){
         super();
          this.state={
@@ -20,7 +19,10 @@ export default class Mybooks extends React.Component {
                 title:"asterix",
                category : "BD",
               },
-             
+              {
+                title:"asterix",
+               category : "BD",
+              },
                ]}) 
        
         }
@@ -29,10 +31,13 @@ export default class Mybooks extends React.Component {
      render() {
    
         return <div>
- <h1>Mes Livres de My Books</h1>
+ <h1>Mes Livres disponibles</h1>
  {this.state.Books.map(book =>(<div><Book title={book.title} category={book.category}/>
 </div>))}
 <button>Modifier</button>
 <button>Supprimer</button>
 <button>Ajouter un Book</button>
-</div>}}
+</div>
+
+
+}}
