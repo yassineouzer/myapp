@@ -1,5 +1,6 @@
 import React from 'react'
 import Book from "./Book"
+import {Link} from  "react-router-dom"
 
 export default class Mybooks extends React.Component {
 
@@ -34,5 +35,5 @@ export default class Mybooks extends React.Component {
 </div>))}
 <button>Modifier</button>
 <button>Supprimer</button>
-<button>Ajouter un Book</button>
+<Link  to="/Addbook"><button>Ajouter un Book</button></Link>
 </div>}}
