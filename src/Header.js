@@ -25,8 +25,9 @@ export default function Header() {
   
       <div>
       
-        <button className="btn btn-outline-success" type="submit">Se deconnecter</button></div>
+      <Link  to="/Login"><button className="btn btn-outline-success" type="submit">Se deconnecter</button></Link></div>
      </div></div>
+    
      </nav>
    
     )
