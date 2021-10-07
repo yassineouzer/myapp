@@ -13,16 +13,16 @@ export default class ListBooks extends React.Component {
     componentDidMount() {
         this.setState({Books:[ 
                {
-                 title:"tintin",
-                category : "BD",
+                 title:"tintin",  category : "BD",
+               
                },
                {
-                title:"asterix",
-               category : "BD",
+                title:"asterix",  category : "BD",
+              
               },
               {
-                title:"asterix",
-               category : "BD",
+                title:"asterix",   category : "BD",
+           
               },
                ]}) 
        
@@ -33,11 +33,11 @@ export default class ListBooks extends React.Component {
    
         return <div>
  <h1>Mes Livres disponibles</h1>
- {this.state.Books.map(book =>(<div><Book title={book.title}/><Book category={book.category}/>
+ {this.state.Books.map(book =>(<div style={{marginBottom:"10px"}}><Book title={book.title} category={book.category}/>
 </div>))}
-<button>Modifier</button>
-<button>Supprimer</button>
-<Link  to="/Addbook"><button>Ajouter un Book</button></Link>
+<div style={{fontSize:"12px"}}>
+<button>Emprunter</button>
+<Link  to="/Addbook"><button className="btn btn-primay btn-sm">Nouveau Livre</button></Link></div>
 </div>
 
 

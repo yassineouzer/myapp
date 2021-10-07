@@ -12,8 +12,10 @@ import Myborrows from "./Myborrows";
 
 function App(){
   return (
+   
    <BrowserRouter>
-   <div className="App" style={{backgroundImage:"linear-gradient(#87CEEB,#87CEEB)"}}>
+   <Header></Header>
+   <div className="App" style={{backgroundImage:"linear-gradient(100%,#87CEEB,#87CEEB)"}}>
      <Route path="/ListBooks">
       <ListBooks/>
       </Route>
@@ -45,7 +47,7 @@ function App(){
       <Route path="/Myborrows">
       < Myborrows/>
       </Route>
-      
+
       </div>
       </BrowserRouter> 
   )}

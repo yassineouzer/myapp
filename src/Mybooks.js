@@ -3,7 +3,7 @@ import Book from "./Book"
 import {Link} from  "react-router-dom"
 
 export default class Mybooks extends React.Component {
-
+          
 
     constructor(){
         super();
@@ -14,12 +14,12 @@ export default class Mybooks extends React.Component {
     componentDidMount() {
         this.setState({Books:[ 
                {
-                 title:"tintin",
-                category : "BD",
+                 title:"tintin",  category : "BD",
+       
                },
                {
-                title:"asterix",
-               category : "BD",
+                title:"asterix",   category : "BD",
+             
               },
              
                ]}) 
@@ -31,9 +31,10 @@ export default class Mybooks extends React.Component {
    
         return <div>
  <h1>Mes Livres de My Books</h1>
- {this.state.Books.map(book =>(<div><Book title={book.title} category={book.category}/>
-</div>))}
-<button>Modifier</button>
-<button>Supprimer</button>
-<Link  to="/Addbook"><button>Ajouter un Book</button></Link>
+ {this.state.Books.map(bok =>(<div style={{marginBottom:"10px"}}><Book title={bok.title} category={bok.category}/>
+</div>))} 
+<div  style={{fontSize:"14px"}}>
+<button>Emprunter</button>
+<Link  to="/Addbook"><button className="btn btn-primay btn-sm">Nouveau Livre</button></Link>
+</div>
 </div>}}

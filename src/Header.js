@@ -3,19 +3,19 @@ import { Link } from "react-router-dom"
 
 export default function Header() {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light" style={{backgroundImage:"linear-gradient(#87CEEB,#87CEEB)"}}>
-  <div class="container-fluid">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{backgroundImage:"linear-gradient(#87CEEB,#87CEEB)"}}>
+  <div className="container-fluid">
     
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
+    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+        <li className="nav-item">
         <Link className="nav-link" to="/Myborrows">Mes emprunts</Link>
         </li>
-        <li class="nav-item">
+        <li className="nav-item">
         <Link className="nav-link" to="/Mybooks">Mes livres</Link>
         </li>
 
-        <li class="nav-item">
+        <li className="nav-item">
          <Link className="nav-link" to="/Listbooks">Mes livres disponibles</Link>
              </li> 
              </ul>
@@ -25,7 +25,7 @@ export default function Header() {
   
       <div>
       
-        <button class="btn btn-outline-success" type="submit">Se deconnecter</button></div>
+        <button className="btn btn-outline-success" type="submit">Se deconnecter</button></div>
      </div></div>
      </nav>
    
