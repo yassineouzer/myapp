@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Adduser() {
     return (
-        <div style={{display:"flex",justifyContent:"center"}}>
-           <form style={{width:"50%",marginLeft:"50px"}}>
+        <div style={{display:"flex",justifyContent:"center",position:"relative"}}>
+           <form style={{width:"50%",marginLeft:"50px",position:"absolute",top:"60px"}}>
   <div className="form-group">
     <label htmlFor="formGroupExampleInput">Firstname</label>
     <input type="text" className="form-control form-control-sm" id="formGroupExampleInput" required/>
